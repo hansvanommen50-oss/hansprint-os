@@ -1,6 +1,3 @@
-export { Button } from "../../button/src";
-export type { ButtonProps } from "../../button/src";
-
+export * from "./component";
 export * from "./tokens";
 export * from "./utilities";
-export * from "./component";
