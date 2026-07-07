@@ -1,31 +1,22 @@
-import { Button } from "@hansprint/core";
-const button = new Button();
+import "../../../packages/tokens/src/css/tokens.css";
+import { Button } from "@hansprint/ui-button";
 
-document.querySelector("#app")!.innerHTML = `
-<h1>Hansprint OS</h1>
+const app = document.querySelector("#app");
 
-${button.render({
-  label: "Offerte aanvragen"
-})}
+if (!app) {
+  throw new Error("App container not found");
+}
 
-<br><br>
+app.innerHTML = "<h1>Hansprint OS</h1>";
 
-${button.render({
-  label: "Meer informatie",
-  variant: "secondary"
-})}
+const buttons = [
+  new Button({ label: "Primary" }),
+  new Button({ label: "Secondary", variant: "secondary" }),
+  new Button({ label: "Outline", variant: "outline" }),
+  new Button({ label: "Loading", loading: true }),
+  new Button({ label: "Disabled", disabled: true })
+];
 
-<br><br>
-
-${button.render({
-  label: "Opslaan",
-  loading: true
-})}
-
-<br><br>
-
-${button.render({
-  label: "Verwijderen",
-  disabled: true
-})}
-`;
+buttons.forEach(button => {
+  app.appendChild(button.render());
+});

@@ -9,7 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@hansprint/core": "workspace:*"
+    "@hansprint/core": "workspace:*",
+    "@hansprint/tokens": "workspace:*",
+    "@hansprint/ui-button": "workspace:*"
   },
   "devDependencies": {
     "typescript": "^5.9.2",

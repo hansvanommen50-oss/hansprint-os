@@ -13,6 +13,12 @@ importers:
       '@hansprint/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@hansprint/tokens':
+        specifier: workspace:*
+        version: link:../../packages/tokens
+      '@hansprint/ui-button':
+        specifier: workspace:*
+        version: link:../../packages/ui/button
     devDependencies:
       typescript:
         specifier: ^5.9.2
@@ -28,6 +34,19 @@ importers:
         version: 5.9.3
 
   packages/tokens:
+    devDependencies:
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+
+  packages/ui/button:
+    dependencies:
+      '@hansprint/core':
+        specifier: workspace:*
+        version: link:../../core
+      '@hansprint/tokens':
+        specifier: workspace:*
+        version: link:../../tokens
     devDependencies:
       typescript:
         specifier: ^5.9.3

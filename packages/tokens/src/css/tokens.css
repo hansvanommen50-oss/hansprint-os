@@ -1,0 +1,17 @@
+:root {
+  --hds-colors-primary: #1F4FFF;
+  --hds-colors-secondary: #6B7280;
+  --hds-colors-accent: #FF6B00;
+
+  --hds-text: #111827;
+  --hds-border: #E5E7EB;
+
+  --hds-radius-sm: 4px;
+  --hds-radius-md: 8px;
+  --hds-radius-lg: 12px;
+
+  --hds-spacing-2: 8px;
+  --hds-spacing-3: 12px;
+  --hds-spacing-4: 16px;
+  --hds-spacing-6: 24px;
+}

@@ -1,5 +1,5 @@
 {
-  "name": "@hansprint/tokens",
+  "name": "@hansprint/ui-button",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -7,18 +7,20 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     }
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "build:css": "node scripts/build-css.mjs",
-    "build:all": "pnpm run build && pnpm run build:css",
+    "build": "tsc -p tsconfig.json && cp src/Button.css dist/Button.css",
     "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@hansprint/core": "workspace:*",
+    "@hansprint/tokens": "workspace:*"
   },
   "devDependencies": {
     "typescript": "^5.9.3"
