@@ -1,0 +1,56 @@
+.hds-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 24px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: var(--hds-color-primary, #1F4FFF);
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all .2s ease;
+}
+
+.hds-button:hover {
+  transform: translateY(-2px);
+}
+
+.hds-button:active {
+  transform: translateY(0);
+}
+
+.hds-button--secondary {
+  background: transparent;
+  color: var(--hds-color-primary,#1F4FFF);
+  border:2px solid var(--hds-color-primary,#1F4FFF);
+}
+
+.hds-button--ghost{
+    background:transparent;
+}.hds-button:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.hds-button:focus-visible {
+  outline: 3px solid #7aa2ff;
+  outline-offset: 2px;
+}
+
+.hds-button__icon {
+  display: inline-flex;
+  margin-inline: .35rem;
+}
+
+.hds-button--ghost {
+  background: transparent;
+  color: var(--hds-color-primary,#1F4FFF);
+}
