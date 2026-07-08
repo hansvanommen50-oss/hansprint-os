@@ -1,6 +1,17 @@
 {
-  "name": "@hansprint/ui-{{kebab}}",
+  "name": "{{package}}",
   "version": "0.1.0",
   "private": true,
-  "type": "module"
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ]
 }
