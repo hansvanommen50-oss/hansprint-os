@@ -1,4 +1,6 @@
+import { ensureDir } from "./filesystem/index.js";
 import { componentRoot } from "./paths.js";
+
 import type {
   ComponentOptions,
   GeneratorResult
@@ -9,6 +11,8 @@ export function generateComponent(
 ): GeneratorResult {
 
   const target = componentRoot(options.name);
+
+  ensureDir(target);
 
   return {
     success: true,
