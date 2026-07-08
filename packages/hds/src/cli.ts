@@ -11,7 +11,6 @@ export function cli() {
 Hansprint Developer CLI
 
 Usage:
-
   hds new
   hds build
   hds doctor
@@ -22,19 +21,19 @@ Usage:
 
   switch (args[0]) {
     case "new":
-      newCommand(args.slice(1));
+      newCommand.run(args.slice(1));
       break;
 
     case "build":
-      buildCommand();
+      buildCommand.run(args.slice(1));
       break;
 
     case "doctor":
-      doctorCommand();
+      doctorCommand.run(args.slice(1));
       break;
 
     case "release":
-      releaseCommand();
+      releaseCommand.run(args.slice(1));
       break;
 
     default:

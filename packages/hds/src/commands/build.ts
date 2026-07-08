@@ -1,3 +1,10 @@
-export function buildCommand() {
-  console.log("BUILD");
-}
+import type { Command } from "../types/command.js";
+
+export const buildCommand: Command = {
+  name: "build",
+  description: "Build workspace",
+
+  run() {
+    console.log("BUILD");
+  }
+};
