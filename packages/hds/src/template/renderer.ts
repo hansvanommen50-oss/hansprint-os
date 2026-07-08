@@ -1,13 +1,14 @@
-import type { TemplateVariables } from "./variables.js";
+import type {
+  RenderOptions
+} from "./types.js";
 
 export function renderTemplate(
-  template: string,
-  vars: TemplateVariables
+  options: RenderOptions
 ): string {
 
-  let output = template;
+  let output = options.template;
 
-  for (const [key, value] of Object.entries(vars)) {
+  for (const [key, value] of Object.entries(options.variables)) {
     output = output.replaceAll(
       `{{${key}}}`,
       value
