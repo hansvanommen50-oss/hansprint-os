@@ -1,0 +1,25 @@
+.hds-input {
+  width: 100%;
+
+  padding: var(--hds-spacing-3) var(--hds-spacing-4);
+
+  border: 1px solid var(--hds-colors-border);
+  border-radius: var(--hds-radius-md);
+
+  background: var(--hds-colors-surface);
+  color: var(--hds-colors-text);
+
+  font: inherit;
+
+  transition: border-color .2s ease;
+}
+
+.hds-input:focus {
+  outline: none;
+  border-color: var(--hds-colors-primary);
+}
+
+.hds-input:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}

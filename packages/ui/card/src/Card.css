@@ -1,0 +1,16 @@
+.hds-card {
+  background: var(--hds-colors-surface);
+  color: var(--hds-colors-text);
+
+  border: 1px solid var(--hds-colors-border);
+
+  border-radius: var(--hds-radius-lg);
+
+  padding: var(--hds-spacing-4);
+
+  transition: .2s;
+}
+
+.hds-card--elevated {
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+}

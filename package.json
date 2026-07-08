@@ -2,10 +2,13 @@
   "name": "hansprint-os",
   "private": true,
   "packageManager": "pnpm@11.10.0",
+ 
   "scripts": {
-    "dev": "pnpm --filter @hansprint/demo dev",
-    "build": "pnpm -r build",
-    "test": "pnpm -r test",
-    "lint": "pnpm -r lint"
+    "dev": "...",
+    "build": "...",
+    "test": "...",
+    "lint": "...",
+    "new:component": "node tools/create-component.mjs",
+    "hds": "pnpm --filter @hansprint/hds dev"
   }
 }

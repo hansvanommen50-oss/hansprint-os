@@ -1,0 +1,5 @@
+$ tsc -p tsconfig.json
+src/cli.ts(2,16): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+/Users/mac/Desktop/Github/hansprint-os/tools/hds:
+[ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL] @hansprint/hds@0.1.0 build: `tsc -p tsconfig.json`
+Exit status 2

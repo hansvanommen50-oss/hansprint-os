@@ -1,5 +1,6 @@
 import "../../../packages/tokens/src/css/tokens.css";
 import { Button } from "@hansprint/ui-button";
+import { Input } from "@hansprint/ui-input";
 
 const app = document.querySelector("#app");
 
@@ -20,3 +21,15 @@ const buttons = [
 buttons.forEach(button => {
   app.appendChild(button.render());
 });
+const card = new Card({
+  title: "Hansprint OS",
+  content: "Card component werkt.",
+  elevated: true
+});
+
+app.appendChild(card.render());
+const input = new Input({
+  placeholder: "Uw e-mailadres"
+});
+
+app.appendChild(input.render());
