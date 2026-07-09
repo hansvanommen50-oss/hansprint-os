@@ -3,10 +3,13 @@
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "./dist",
-    "composite": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2022",
     "declaration": true,
     "declarationMap": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "strict": true
   },
   "include": [
     "src"
