@@ -1,5 +1,6 @@
 import "../../../packages/tokens/src/css/tokens.css";
 import { Button } from "@hansprint/ui-button";
+import { Card } from "@hansprint/ui-card";
 import { Input } from "@hansprint/ui-input";
 
 const app = document.querySelector("#app");
