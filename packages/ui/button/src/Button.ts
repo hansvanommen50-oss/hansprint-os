@@ -1,5 +1,8 @@
-import "./Button.css";
 import type { ButtonProps } from "./types";
+
+if (typeof window !== "undefined" && typeof document !== "undefined") {
+  await import("./Button.css");
+}
 
 export class Button {
   constructor(private props: ButtonProps) {}
@@ -13,7 +16,7 @@ export class Button {
     button.className =
       `hds-button hds-button--${variant} hds-button--${size}`;
 
-    button.disabled = this.props.disabled ?? false;
+    button.disabled = (this.props.disabled ?? false) || this.props.loading === true;
 
     button.textContent = this.props.loading
       ? "Laden..."

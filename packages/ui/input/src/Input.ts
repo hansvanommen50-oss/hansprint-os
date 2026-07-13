@@ -1,5 +1,8 @@
-import "./Input.css";
 import type { InputProps } from "./types";
+
+if (typeof window !== "undefined" && typeof document !== "undefined") {
+  await import("./Input.css");
+}
 
 export class Input {
   constructor(private props: InputProps = {}) {}
