@@ -26,3 +26,10 @@ test('loading buttons are disabled and show loading text', () => {
   assert.equal(rendered.disabled, true);
   assert.equal(rendered.textContent, 'Laden...');
 });
+
+test('buttons default to a non-submit type', () => {
+  const button = new Button({ label: 'Save' });
+  const rendered = button.render();
+
+  assert.equal(rendered.type, 'button');
+});

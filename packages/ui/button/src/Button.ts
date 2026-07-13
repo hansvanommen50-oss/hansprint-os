@@ -16,6 +16,7 @@ export class Button {
     button.className =
       `hds-button hds-button--${variant} hds-button--${size}`;
 
+    button.type = "button";
     button.disabled = (this.props.disabled ?? false) || this.props.loading === true;
 
     button.textContent = this.props.loading
