@@ -17,6 +17,10 @@ export class Input {
     input.value = this.props.value ?? "";
     input.disabled = this.props.disabled ?? false;
 
+    if (this.props.label) {
+      input.setAttribute("aria-label", this.props.label);
+    }
+
     return input;
   }
 }
