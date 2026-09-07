@@ -1,0 +1,33 @@
+{
+  "name": "hansprint-os",
+  "private": true,
+  "packageManager": "pnpm@11.10.0",
+  "scripts": {
+    "dev": "pnpm --filter @hansprint/demo dev",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r exec tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "quality:circular-deps": "node tools/quality/check-circular-deps.mjs",
+    "quality:unused-deps": "node tools/quality/check-unused-deps.mjs",
+    "quality:source-pollution": "node tools/quality/check-source-pollution.mjs",
+    "quality:public-api": "node tools/quality/check-public-api.mjs",
+    "quality:graph": "node tools/quality/dependency-graph.mjs",
+    "verify": "pnpm quality:source-pollution && pnpm quality:public-api && pnpm quality:circular-deps && pnpm quality:unused-deps && pnpm build && pnpm typecheck && pnpm lint && pnpm test",
+    "clean": "pnpm -r clean",
+    "new:component": "node tools/create-component.mjs",
+    "hds": "pnpm --filter @hansprint/hds dev",
+    "test": "pnpm -w exec vitest run",
+    "test:coverage": "pnpm -w exec vitest run --coverage"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@vitest/coverage-v8": "^1.6.1",
+    "eslint": "^10.7.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-simple-import-sort": "^14.0.0",
+    "eslint-plugin-unused-imports": "^4.4.1",
+    "jsdom": "^22.1.0",
+    "typescript-eslint": "^8.64.0",
+    "vitest": "^1.2.1"
+  }
+}

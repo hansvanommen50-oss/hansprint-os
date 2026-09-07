@@ -1,0 +1,11 @@
+.hds-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: var(--hds-spacing-4);
+  box-sizing: border-box;
+}
+
+.hds-container--fluid {
+  max-width: 100%;
+}

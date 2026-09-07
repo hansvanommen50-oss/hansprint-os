@@ -1,0 +1,8 @@
+.hds-text {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.hds-text--muted {
+  color: var(--hds-color-text-muted);
+}

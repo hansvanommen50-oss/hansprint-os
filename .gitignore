@@ -1,0 +1,67 @@
+node_modules/
+dist/
+coverage/
+.vite/
+.DS_Store
+.env
+.env.local
+.storybook-static/
+*.log
+**/*.tsbuildinfo
+**/*.js.map
+**/*.d.ts.map
+**/src/**/*.js
+**/src/**/*.d.ts
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+coverage/
+.vite/
+.storybook-static/
+
+# TypeScript
+*.tsbuildinfo
+**/*.tsbuildinfo
+
+# Source pollution (should never exist)
+**/src/**/*.js
+**/src/**/*.d.ts
+**/src/**/*.js.map
+**/src/**/*.d.ts.map
+
+# Source maps
+*.js.map
+*.d.ts.map
+
+# Environment
+.env
+.env.local
+.env.*
+!.env.example
+
+# Logs
+*.log
+pnpm-debug.log*
+npm-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Turborepo (if added later)
+.turbo/
+
+# Test artifacts
+playwright-report/
+test-results/
+
+# Misc
+tmp/
+temp/

@@ -1,0 +1,7 @@
+.hds-badge {
+  display: inline-flex;
+  border-radius: var(--hds-radius-sm);
+  padding: 2px 8px;
+  background: var(--hds-colors-surfaceAlt);
+  color: var(--hds-colors-text);
+}
