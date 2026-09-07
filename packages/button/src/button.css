@@ -1,0 +1,40 @@
+.hds-button {
+  font: inherit;
+  border: 0;
+  cursor: pointer;
+
+  border-radius: var(--hds-radius-md);
+  padding: var(--hds-spacing-3) var(--hds-spacing-4);
+
+  transition: 0.2s;
+}
+
+.hds-button--primary {
+  background: var(--hds-colors-primary);
+  color: var(--hds-colors-white);
+}
+
+.hds-button--secondary {
+  background: var(--hds-colors-secondary);
+  color: var(--hds-colors-white);
+}
+
+.hds-button--outline {
+  background: var(--hds-colors-surface);
+  color: var(--hds-colors-text);
+  border: 1px solid var(--hds-colors-border);
+}
+
+.hds-button:hover:not(:disabled) {
+  filter: brightness(.95);
+}
+
+.hds-button:focus-visible {
+  outline: 2px solid var(--hds-colors-accent);
+  outline-offset: 2px;
+}
+
+.hds-button:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}

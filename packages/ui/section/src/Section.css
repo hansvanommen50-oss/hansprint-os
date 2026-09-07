@@ -1,0 +1,8 @@
+.hds-section {
+  display: block;
+  padding: 2rem 0;
+}
+
+.hds-section--tight {
+  padding: 1rem 0;
+}

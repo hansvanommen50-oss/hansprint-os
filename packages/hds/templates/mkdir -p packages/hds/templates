@@ -1,0 +1,11 @@
+export interface {{Component}}Props {
+
+}
+
+export class {{Component}} {
+
+  constructor(
+    public props: {{Component}}Props
+  ) {}
+
+}

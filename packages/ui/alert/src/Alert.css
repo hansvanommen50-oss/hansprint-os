@@ -1,0 +1,6 @@
+.hds-alert {
+  border: 1px solid var(--hds-colors-border);
+  border-radius: var(--hds-radius-md);
+  padding: var(--hds-spacing-4);
+  background: var(--hds-colors-surface);
+}

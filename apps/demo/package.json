@@ -1,0 +1,30 @@
+{
+  "name": "@hansprint/demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -p tsconfig.json && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@hansprint/core": "workspace:*",
+    "@hansprint/tokens": "workspace:*",
+    "@hansprint/ui-button": "workspace:*",
+    "@hansprint/ui-card": "workspace:*",
+    "@hansprint/ui-container": "workspace:*",
+    "@hansprint/ui-grid": "workspace:*",
+    "@hansprint/ui-heading": "workspace:*",
+    "@hansprint/ui-hero": "workspace:*",
+    "@hansprint/ui-input": "workspace:*",
+    "@hansprint/ui-section": "workspace:*",
+    "@hansprint/ui-stack": "workspace:*",
+    "@hansprint/ui-text": "workspace:*"
+    ,"@hansprint/theme": "workspace:*"
+    ,"@hansprint/hds": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vite": "^8.1.3"
+  }
+}

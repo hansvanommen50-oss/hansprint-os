@@ -1,0 +1,28 @@
+import type { ButtonProps } from "./types";
+
+if (typeof window !== "undefined" && typeof document !== "undefined") {
+  await import("./Button.css");
+}
+
+export class Button {
+  constructor(private props: ButtonProps) {}
+
+  render(): HTMLButtonElement {
+    const button = document.createElement("button");
+
+    const variant = this.props.variant ?? "primary";
+    const size = this.props.size ?? "md";
+
+    button.className =
+      `hds-button hds-button--${variant} hds-button--${size}`;
+
+    button.type = "button";
+    button.disabled = (this.props.disabled ?? false) || this.props.loading === true;
+
+    button.textContent = this.props.loading
+      ? "Laden..."
+      : this.props.label;
+
+    return button;
+  }
+}
