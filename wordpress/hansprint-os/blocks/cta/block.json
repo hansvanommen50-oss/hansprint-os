@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "hansprint/cta",
+  "version": "0.1.0",
+  "title": "Hansprint Contactblok",
+  "category": "hansprint",
+  "textdomain": "hansprint-os",
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "default": "Jouw verhaal begint hier"
+    },
+    "text": {
+      "type": "string",
+      "default": "Vertel wat je doet en voor wie."
+    },
+    "label": {
+      "type": "string",
+      "default": ""
+    },
+    "url": {
+      "type": "string",
+      "default": ""
+    },
+    "anchor": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "editorScript": "hansprint-os-editor",
+  "style": "hansprint-os-blocks"
+}
