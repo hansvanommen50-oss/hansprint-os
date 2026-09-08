@@ -5,8 +5,9 @@
 
 import { doctorCommand } from "./commands/doctor.mjs";
 import { helpCommand } from "./commands/help.mjs";
+import { verifyCommand } from "./commands/verify.mjs";
 
-const builtInCommands = [helpCommand, doctorCommand];
+const builtInCommands = [helpCommand, doctorCommand, verifyCommand];
 
 function validateCommand(command) {
   if (!command || typeof command.name !== "string" || command.name.length === 0) {
