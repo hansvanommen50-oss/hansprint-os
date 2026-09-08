@@ -1,0 +1,7 @@
+{
+  "preferredVersions": { "php": "8.0", "wp": "6.6" },
+  "steps": [
+    { "step": "activatePlugin", "pluginPath": "hansprint-os/hansprint-os.php" },
+    { "step": "runPHP", "code": "<?php require '/wordpress/wp-load.php'; require '/hansprint-tests/integration.php';" }
+  ]
+}
